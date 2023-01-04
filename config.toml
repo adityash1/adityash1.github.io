@@ -1,0 +1,61 @@
+baseURL = 'https://adityash1.github.io/'
+author = "Aditya Sharma"
+paginate = 3
+languageCode = "en-us"
+DefaultContentLanguage = "en-us"
+enableInlineShortcodes = true
+
+
+# ------------------------------
+theme = "paper"
+title = '@ditya'
+
+[params]
+  color = 'linen'                   # linen, wheat, gray, light
+
+  # header social icons
+  github = 'adityash1'	
+  twitter = 'adityash_twt'
+  rss = true              
+
+  # home page profile
+  avatar = 'https://avatars.githubusercontent.com/u/65771169?v=4'         # Gravatar email or image url
+  name = 'Aditya Sharma'
+  bio = 'Aspiring SWE. Golang. Typescript. C++. Web. DevOps'
+
+  # misc
+  disableHLJS = true                # disable requesting highlight.js
+  monoDarkIcon = true               # show monochrome dark mode icon
+  gravatarCdn = 'GRAVATAR_CDN_LINK' # e.g. 'https://cdn.v2ex.com/gravatar/'
+
+# ------------------------------
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
